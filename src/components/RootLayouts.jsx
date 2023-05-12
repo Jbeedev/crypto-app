@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 import { Navbar } from "./index";
-
+import '../App.css'
 
 
 const RootLayouts = () => {
@@ -21,8 +21,8 @@ const RootLayouts = () => {
             level={5}
             style={{ color: "white", textAlign: "center" }}
           >
-            Copyright © 2021
-            <Link to="/">JaybeeCrypto Inc.</Link> <br />
+            Copyright © 2023 {" "}
+            <Link to="/">JBCrypto Inc.</Link> <br />
             All Rights Reserved.
           </Typography.Title>
           <Space>

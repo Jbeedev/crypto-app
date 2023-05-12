@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const cryptoApiHeaders = {
   "content-type": "application/octet-stream",
-  "X-RapidAPI-Key": "d5430c9310msh8fcffe623b731c8p1abf6ejsn2d48478dfca1",
+  "X-RapidAPI-Key": process.env.REACT_APP_CRYPTO_COINS_API_KEY,
   "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
 };
 
@@ -38,3 +38,9 @@ export const {
   useGetCryptoHistoryQuery,
   useGetCryptoExchangesQuery,
 } = cryptoApi;
+
+
+
+
+// REACT_APP_CRYPTO_COINS_API_KEY = "d5430c9310msh8fcffe623b731c8p1abf6ejsn2d48478dfca1",
+// REACT_APP_BING_NEWS_API_KEY = "d5430c9310msh8fcffe623b731c8p1abf6ejsn2d48478dfca1"
